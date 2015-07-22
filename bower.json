@@ -1,0 +1,33 @@
+{
+  "name": "glocal",
+  "main": "index.js",
+  "version": "0.1.0",
+  "authors": [
+    "Gilles Coomans <gilles.coomans@gmail.com>"
+  ],
+  "description": "PromiseA+ with glocal context management.",
+  "moduleType": [
+    "amd",
+    "globals",
+    "commonjs",
+    "node"
+  ],
+  "keywords": [
+    "promisea+",
+    "promise",
+    "glocal",
+    "context",
+    "concurrency",
+    "isomorphic"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nomocas/glocal",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "statics/libs/",
+    "test",
+    "tests"
+  ]
+}
