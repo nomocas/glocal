@@ -1,10 +1,19 @@
 /**
- * c3po : Lightweight but powerful protocols manager.
- *  
- * Aimed to be used both sides (server side and/or browser side) to give real isomorphic approach when designing object that need ressources.
+ * glocal : standard Promise A+ with glocal context management.
+ *
+ * Yet another PromiseA+ implementation.
  * 
- * @author Gilles Coomans <gilles.coomans@gmail.com>
- * @licence MIT
+ * Based on Bram Stein implementation (https://github.com/bramstein/promis).
+ * 
+ * Version changes : 
+ * 
+ * - AMD/CommonJS/Global 
+ * - glocal context
+ * - log familly API
+ * - remove polyfill
+ * 
+ * It has been developed to have PromiseA+ compliant tools that manage "glocal context" pattern.
+ * So small pattern, but so powerful...
  */
 (function(define) {
 	"use strict";
@@ -387,5 +396,5 @@
 	else if (typeof window !== 'undefined')
 		window.glocal = factory(); // raw script, assign to c3po global
 	else
-		console.warn('glocal has not been mounted somewhere.');
+		console.warn("glocal hasn't been mounted somewhere.");
 });

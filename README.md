@@ -1,20 +1,55 @@
 # glocal
 
-Yet another PromiseA+ implementation.
+(Yet another) PromiseA+ implementation with concurrent context management.
 
-Based on Bram Stein implementation (https://github.com/bramstein/promis).
+Based on minimal standard Bram Stein implementation (https://github.com/bramstein/promis).
+
+It has been developed to have PromiseA+ compliant tools that manage "glocal context" pattern.
+So small pattern, but so powerful...;)
+
+Still lightweight : 3.5 Ko minified, 1.3 Ko gzipped.
 
 Version changes : 
 
-- AMD/CommonJS/Global 
-- glocal context
-- log familly API
-- remove polyfill
+- AMD/CommonJS/Global in place of Closure compiled
+- glocal context management (the aim of this implementation)
+- log familly API (for debugging facilities)
+- remove polyfill (because it's more than a polyfill know)
 
-It has been developed to have PromiseA+ compliant tools that manage "glocal context" pattern.
-So small pattern, but so powerful...
+# Main idea
+
+As Kris Zyp says in promised-io docs (https://github.com/kriszyp/promised-io) from where I took glocal the pattern :
+
+> One of the challenges with working asynchronous code is that there can be times when you wish for some contextual state information to be preserved across multiple asynchronous actions, without having to actually pass the state to each function in the asynchronous chain. Common examples of such contextual state would be tracking the current transaction or the currently logged in user. Such state information could be stored in a singleton (a module property or a global variable), but with asynchronous actions being interleaved, this is unsuitable for tracking state across asynchronous continuations of an action.
+> The promised-io package's promise module provides a facility for tracking state across asynchronous operations. The promise module tracks the "currentContext" global variable, and whatever value that was in the variable at the time a promise was created will be restored when that promise is fulfilled (or rejected).
+
 
 ## Tests
+
+### Under nodejs
+
+You need to have mocha installed globally before launching test. 
+```
+> npm install -g mocha
+```
+Do not forget to install dev-dependencies. i.e. : from 'glocal' folder, type :
+```
+> npm install
+```
+
+then, always in 'glocal' folder simply enter :
+```
+> mocha
+```
+
+### In the browser
+
+Simply serve "glocal" folder in you favorite web server then open ./index.html.
+
+For that, you could use the provided "gulp web server" by entering :
+```
+> gulp serve-test
+```
 
 ## Licence
 
