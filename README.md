@@ -14,7 +14,7 @@ Version changes :
 - AMD/CommonJS/Global in place of Closure compiled
 - glocal context management (the aim of this implementation)
 - log familly API (for debugging facilities)
-- remove polyfill (because it's more than a polyfill know)
+- remove polyfill (because it's more than a polyfill now)
 
 # Main idea
 
