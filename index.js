@@ -251,8 +251,9 @@
 		 * @return {!Promise}
 		 */
 		Promise.prototype.then = function(onResolved, onRejected) {
+			var self = this;
 			var target = new Promise(function(resolve, reject) {
-				this.notify();
+				self.notify();
 			});
 			this.deferred.push([(onResolved ? swapper(onResolved, this) : onResolved), (onRejected ? swapper(onRejected, this) : onRejected), target]);
 			return target;
