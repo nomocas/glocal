@@ -1,40 +1,40 @@
 {
-  "name": "glocal",
-  "version": "0.1.0",
-  "description": "PromiseA+ with glocal context management.",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "start": "gulp serve-test",
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nomocas/glocal.git"
-  },
-  "keywords": [
-    "promisea+",
-    "promise",
-    "glocal",
-    "context",
-    "concurrency",
-    "isomorphic"
-  ],
-  "author": "Gilles Coomans <gilles.coomans@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nomocas/glocal/issues"
-  },
-  "homepage": "https://github.com/nomocas/glocal",
-  "devDependencies": {
-    "gulp": "^3.8.11",
-    "chai": "^2.2.0",
-    "gulp-uglifyjs": "^0.6.1",
-    "gulp-live-server": "0.0.14",
-    "gulp-jshint": "^1.10.0",
-    "jshint-stylish": "^1.0.1",
-    "gulp-rename": "^1.2.2"
-  }
+    "name": "glocal",
+    "version": "0.2.0",
+    "description": "PromiseA+ with glocal context management.",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "start": "gulp serve-test",
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nomocas/glocal.git"
+    },
+    "keywords": [
+        "promisea+",
+        "promise",
+        "glocal",
+        "context",
+        "concurrency",
+        "isomorphic"
+    ],
+    "author": "Gilles Coomans <gilles.coomans@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nomocas/glocal/issues"
+    },
+    "homepage": "https://github.com/nomocas/glocal",
+    "devDependencies": {
+        "gulp": "^3.8.11",
+        "chai": "^2.2.0",
+        "gulp-uglifyjs": "^0.6.1",
+        "gulp-live-server": "0.0.14",
+        "gulp-jshint": "^1.10.0",
+        "jshint-stylish": "^1.0.1",
+        "gulp-rename": "^1.2.2"
+    }
 }
