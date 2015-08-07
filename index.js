@@ -259,7 +259,6 @@
 			return target;
 		};
 
-
 		//_____________________________________ WHEN
 
 		Promise.when = function(something) {
